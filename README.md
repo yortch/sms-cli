@@ -28,8 +28,8 @@ Gets account balance:
 ### Messaging Setup
 Setups require configuration to send SMS messages and private key path (assumes default value of ~/private.key)
 
-`setup --application-id <guid>`
-`setup --application-id <guid> --private-key <path>`
+```setup --application-id <guid>``` or
+```setup --application-id <guid> --private-key <path>```
 
 ### Messaging Send SMS
 Sends text SMS message (emojis are supported)
