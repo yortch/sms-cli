@@ -32,7 +32,7 @@ Setups require configuration to send SMS messages and private key path (assumes 
 ```setup --application-id <guid> --private-key <path>```
 
 ### Messaging Send SMS
-Sends text SMS message (emojis are supported)
+Sends text SMS message (emojis are supported). Country code is required in to/from phone numbers.
 
 `sms --to <phone> --from <phone> --text <text message>`
 
