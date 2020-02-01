@@ -1,0 +1,30 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.jb.demo'
+version = '1.0.0'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+
+	compile group: 'org.springframework.shell', name: 'spring-shell-starter', version: '2.0.1.RELEASE'
+	compile group: 'org.springframework', name: 'spring-web', version: '5.2.3.RELEASE'
+	//Required to deserialize JSON response
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.2'
+	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+	testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.4.RELEASE'
+	
+}
+
+test {
+	useJUnitPlatform()
+}
